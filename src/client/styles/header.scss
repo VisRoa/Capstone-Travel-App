@@ -1,0 +1,35 @@
+nav{
+    width: 100%;
+    
+    height: auto;
+    
+    padding:12px;
+    grid-area: hdr;
+ 
+    display: flex;
+    border-radius: 13px;
+    background-color:  rgb(212, 171, 185);;
+
+
+}
+
+#navDetails {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navDetails h2{
+   
+    font-size: 20px;
+    color:white;
+    font-weight: bold;
+    
+
+
+}
+
+
+
+

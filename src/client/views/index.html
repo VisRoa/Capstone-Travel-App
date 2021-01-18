@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+     <head>
+         <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta charset="UTF-8">
+        <title>Capstone</title>
+    </head>
+    <body>
+         <div class="container">
+            <nav>
+                 <div id="navDetails">
+                     <h2>Travel Project</h2>
+                </div>
+          </nav>
+            <section id="The_trip">
+                 <div id="trip_planing">
+                     <h1>Start Planning Your Trip</h1>
+                    <form class="User_Inputs">
+                        <div class="form_entries">
+                            <label for="des_label"> Enter Your Destination </label>
+                            <input type="text" id="TO_destination" class="input CityInput" name="to" placeholder="e.g. Bosnia, DC ..." autocomplete="off" required>
+                            <input type="date" id="the_date" class="input DateInput" name="date" required>
+                        </div>
+                        <button class="submit">
+                            Check Your Trip 
+                         </button>
+                    </form>
+                 </div>
+            </section>
+    <!-- data will be added to this secton after fetching about it --> 
+        <section class="user_request">
+            <div class="details">
+                <div class="content">
+                    <!--       
+              <div>
+                <h1> Your Trip Information</h1>
+              </div>
+               
+              <div class="res">
+              <h1 class="city_to">The City To Travel To   </h1>
+              <h1 class="date_to">The Date To travel at   </h1>
+              <h1 class="high_temp">The Expected High Temperature Will be  </h1>
+              <h1 class="low_temp">The Expected Low Temperature Will be   </h1>
+              <h1 class="descreption_temp">The Description of Temperature   </h1>
+              </div> 
+            -->
+                </div>
+            </div>  
+        </section>
+        <section class="separ">
+        </section>
+        <footer>
+            <div id="ftr">
+               project-5 FEND @2020
+            </div>
+        </footer>
+    </div>
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+    </body>
+</html>
